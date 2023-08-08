@@ -99,9 +99,7 @@ class BusDataTable extends React.Component {
         );
     }
 }
-/**
- * Austin DeMars
- */
+
 class BusTracker {
     // Note: We could also have used a static Factory Method (as in previous code examples) to call the constructor.
     constructor() {
