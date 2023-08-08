@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Austin DeMars</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+    <script src="key.js"></script>
+    <script src="BusTrackerIndex.js"></script>
+    <script>
+        new BusTracker(); // note you can also implement the static method approach if you wish
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+
+    <label class="mt-4 mr-3">Route/Speed </label><input id="route" type=text value="">
+    <input id="start" type=button value="Start" class="btn btn-primary">
+    <input id="stop" type=button value="Stop" class="btn btn-danger">
+    <input id="report" type="button" value="Report" class="btn btn-warning">
+    <label id="update"><!-- messages go here --></label>
+
+    <div class="mt-3" id="map" style="width: 100%; height: 450px; text-align: center"><!-- the map is displayed here --></div>
+    <div id="speed-report" style="padding: 10px; text-align: center; color: #88B0B4; background-color: #D2EBF0; border-radius: 5px;"></div>
+
+    <div id="table-section" style="height: 164px !important; overflow-y: auto">
+
+    </div>
+
+</div>
+
+</body>
+</html>
